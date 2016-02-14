@@ -1,0 +1,71 @@
+Anthony Areniego
+
+Postman HTTP Headers
+* alt-svc ? quic=":443"; ma=604800; v="30,29,28,27,26,25"
+o custom header
+* alternate-protocol ? 443:quic,p=1
+o custom header
+* cache-control ? private, max-age=0, must-revalidate, no-transform
+o Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds
+* content-encoding ? gzip
+o The type of encoding used on the data
+* content-length ? 6771
+o the length of the response body in octets (8-bit bytes)
+* content-type ? application/json; charset=UTF-8
+o the media type of this content
+* date ? Sat, 13 Feb 2016 23:56:35 GMT
+o date and time the message was sent
+* etag ? "3z2GbiG39NRdo416x8jooTTBAqY/-FK36sNmRh6IUHq4KGVFXtMEB_Q"
+o An identifier for a specific verison of a resource, often a message digest
+* expires ? Sat, 13 Feb 2016 23:56:35 GMT
+o Gives the date/time after which the response is considered stale
+* server ? GSE
+o Name for the server
+* status ? 200
+o custom header
+* vary ? Origin, X-Origin
+o Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server
+* x-content-type-options ? nosniff
+o the only defined value, "nosniff", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type
+* x-frame-options ? SAMEORIGIN
+o Clickjacking protection: "deny" - no rendering within a frame, " - no rendering within a frame, "sameorigin" - no rendering if origin mismatch
+* x-xss-protection ? 1; mode=block
+o Cross-site scripting (XSS) filter
+
+Soap UI Headers
+Request
+* Accept-Encoding: gzip,deflate
+o List of the acceptable encodings
+* Content-Type: text/xml;charset=UTF-8
+o the media type of this content
+* SOAPAction: http://www.webservicex.net/GetGeoIP
+o WSDL
+* Content-Length: 318
+o the length of the response body in octets (8-bit bytes)
+* Host: www.webservicex.net
+o Where the information is coming from
+* Connection: Keep-Alive
+o Control options for the current connection and list of hop-by-hop response fields
+* User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+o User client that is making the request
+Response
+* Cache-Control -	private, max-age=0
+o Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds
+* Server -	Microsoft-IIS/7.0
+o Name of server
+* Content-Encoding - gzip
+o The type of encoding used on the data
+* X-AspNet-Version - 4.0.30319
+o Gives the version of the APS.NET technology that is supporting the web application
+* Vary - Accept-Encoding
+o Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server
+* #status# - HTTP/1.1 200 OK
+o Status of web application
+* Content-Length - 401
+o the length of the response body in octets (8-bit bytes)
+* Date - Sat, 13 Feb 2016 22:19:04 GMT
+o date and time the message was sent
+* Content-Type - text/xml; charset=utf-8
+o the media type of this content
+* X-Powered-By - ASP.NET
+o Specifies the technology supporting the web application, in this case APS.NET
