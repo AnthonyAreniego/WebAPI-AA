@@ -1,0 +1,35 @@
+{
+	"id": "925f09aa-b9b5-c6d7-ff14-321a1486cf61",
+	"name": "assignment1",
+	"description": "",
+	"order": [
+		"41bc68a3-6bbb-4923-ae49-1be1d0a0413e"
+	],
+	"folders": [],
+	"timestamp": 1454985413142,
+	"owner": "308924",
+	"remoteLink": "https://www.getpostman.com/collections/d07af7614e1d5d4cd966",
+	"public": false,
+	"requests": [
+		{
+			"id": "41bc68a3-6bbb-4923-ae49-1be1d0a0413e",
+			"headers": "",
+			"url": "https://www.googleapis.com/books/v1/volumes?q=turing",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "925f09aa-b9b5-c6d7-ff14-321a1486cf61",
+			"data": [],
+			"dataMode": "params",
+			"name": "https://www.googleapis.com/books/v1/volumes?q=turing",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1454985413142,
+			"version": 2,
+			"responses": [],
+			"tests": "var jsonData = JSON.parse(responseBody);\nvar title = jsonData.items[0].volumeInfo.title;\nconsole.log(\"title \" + title);\nvar patt = /turing/i;\nvar res = patt.test(title);\nconsole.log(res);\ntests[\"book title1\"] = res === true;\ntests[\"book title\"] = responseBody.has(\"turing\");\ntests[\"total items\"] = jsonData.totalItems > 1\ntests[\"Status code is 200\"] = responseCode.code === 200;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
