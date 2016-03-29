@@ -1,0 +1,69 @@
+{
+	"id": "0b119e61-c76d-3b4c-4523-ee8652711d02",
+	"name": "Assignment 3",
+	"description": "",
+	"order": [
+		"67ecbc87-bad4-698a-ab85-5aaab9877f5a",
+		"36118989-1dc5-0f2e-58fe-4573a6798cd2"
+	],
+	"folders": [],
+	"timestamp": 1459228530257,
+	"owner": "308924",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "36118989-1dc5-0f2e-58fe-4573a6798cd2",
+			"headers": "",
+			"url": "http://anthonyareniego-test.apigee.net/assn3/something",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0b119e61-c76d-3b4c-4523-ee8652711d02",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://anthonyareniego-test.apigee.net/assn3/something",
+			"description": "supposed to be get request to github",
+			"descriptionFormat": "html",
+			"time": 1459230123806,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "67ecbc87-bad4-698a-ab85-5aaab9877f5a",
+			"headers": "",
+			"url": "https://anthonyareniego-test.apigee.net/oauth/client_credential/accesstoken?grant_type=client_credentials",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0b119e61-c76d-3b4c-4523-ee8652711d02",
+			"data": [
+				{
+					"key": "client_id",
+					"value": "wo47gsRAd0u5Y650q1jIAzaCbfADQs3m",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "qlInciYR7gKyRIYo",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "https://anthonyareniego-test.apigee.net/oauth/client_credential/accesstoken?grant_type=client_credentials",
+			"description": "Getting access token",
+			"descriptionFormat": "html",
+			"time": 1459228555819,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
