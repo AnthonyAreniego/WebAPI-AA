@@ -1,0 +1,54 @@
+{
+	"id": "27d9726e-1d2f-3c2b-ba62-4116572c5c7f",
+	"name": "assign5",
+	"description": "",
+	"order": [
+		"8d0baea2-8586-0919-aa6a-3cc381809cfb",
+		"f85976f4-7ad6-9e1b-8ed6-b5dc249546af"
+	],
+	"folders": [],
+	"timestamp": 1461633019817,
+	"owner": "308924",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "8d0baea2-8586-0919-aa6a-3cc381809cfb",
+			"headers": "",
+			"url": "http://anthonyareniego-test.apigee.net/a4?ql=name='The Matrix'",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1461633107681,
+			"name": "http://anthonyareniego-test.apigee.net/a4",
+			"description": "Requesting all entities",
+			"collectionId": "27d9726e-1d2f-3c2b-ba62-4116572c5c7f",
+			"responses": []
+		},
+		{
+			"id": "f85976f4-7ad6-9e1b-8ed6-b5dc249546af",
+			"headers": "",
+			"url": "http://anthonyareniego-test.apigee.net/a4?ql=name='The Matrix'",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "27d9726e-1d2f-3c2b-ba62-4116572c5c7f",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://anthonyareniego-test.apigee.net/a4?ql=name='The Matrix'",
+			"description": "requesting a single entity",
+			"descriptionFormat": "html",
+			"time": 1461633153666,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
